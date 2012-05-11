@@ -1,7 +1,7 @@
 foo_uie_explorer_mod
 ---
 
-A modified filesystem explorer panel component for the foobar2000.
+A modified filesystem explorer panel component for the [foobar2000](http://www.foobar2000.org) audio player.
 
 The original component could be found 
 [here](http://www.hydrogenaudio.org/forums/index.php?showtopic=34207)
