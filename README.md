@@ -6,7 +6,7 @@ A modified filesystem explorer panel component for the foobar2000.
 The original component could be found 
 [here](http://www.hydrogenaudio.org/forums/index.php?showtopic=34207)
 
-The modified version allows to customize default folder icon in the filesystem
+The modified version allows to customize the default folder icon in the filesystem
 tree by replacing it at the foobar's copy of the system icon image list.
 
 This has a couple of disadvantages:
