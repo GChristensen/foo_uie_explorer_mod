@@ -1,0 +1,143 @@
+#pragma once
+
+enum _user_msg {
+	WMU_SETCTRLS = (WM_USER + 1),
+	WMU_INSERT,
+	WMU_SEND_PLAYLIST,
+	WMU_INIT
+};
+
+#define ID_PLAYLIST_START			4049
+#define ID_PLAYLIST_DEF_START		4080
+
+#define DEFAULT_SHIFT		(ID_REPLACE_DEF_PLAY - ID_REPLACE_PLAY)
+
+enum _cmd_playlist {
+	ID_MENU_START = ID_PLAYLIST_START,
+	ID_REPLACE_PLAY,
+	ID_REPLACE,
+	ID_ADD_PLAY,
+	ID_ADD,
+	ID_NEW_PLAY,
+	ID_NEW,
+	ID_UPDATE_TEMP_PL,
+	ID_UPDATE_TEMP_PL_PLAY,
+
+	ID_DEFAULT_START = ID_PLAYLIST_DEF_START,
+	ID_REPLACE_DEF_PLAY,
+	ID_REPLACE_DEF,
+	ID_ADD_DEF_PLAY,
+	ID_ADD_DEF,
+	ID_DEFAULT_END,
+
+	ID_PLAYLIST_END
+};
+
+#define ID_MENU_ITEMS				5000
+
+enum _cmd_menu_items {
+	ID_REVEAL = ID_MENU_ITEMS,
+	ID_DELETE_FILES,
+	ID_RENAME_FILE,
+	ID_ADD_FAVO,
+	ID_PREFERENCE,
+	ID_SELECT_NOWPLAYING,
+	ID_MENU_LAST
+};
+
+#define ID_REC_PLAYLIST_START		5030
+
+#define RECUR_SHIFT		(ID_REC_PLAYLIST_START - ID_PLAYLIST_START)
+
+enum _cmd_recursive_playlist {
+	ID_RECUR_START = ID_REC_PLAYLIST_START,
+	ID_REPLACE_PLAY_REC,
+	ID_REPLACE_REC,
+	ID_ADD_PLAY_REC,
+	ID_ADD_REC,
+	ID_NEW_PLAY_REC,
+	ID_NEW_REC,
+	ID_UPDATE_TEMP_PL_REC,
+	ID_UPDATE_TEMP_PL_PLAY_REC,
+
+	ID_DEFAULT_REC_START = ID_PLAYLIST_DEF_START + RECUR_SHIFT,
+	ID_REPLACE_DEF_PLAY_REC,
+	ID_REPLACE_DEF_REC,
+	ID_ADD_DEF_PLAY_REC,
+	ID_ADD_DEF_REC,
+	ID_DEFAULT_REC_END,
+
+	ID_RECUR_END,
+};
+
+#define ID_OTHER_COMMAND			5080
+
+enum _cmd_misc {
+	ID_OTHERS_START = ID_OTHER_COMMAND,
+	ID_TOGGLE_EXPAND,
+	ID_COLLAPSE_ALL,
+	ID_RESET_TREE,
+	ID_OTHERS_END
+};
+
+#define ID_MARK_COMMAND				5200
+
+enum _cmd_mark {
+	ID_MARK_START = ID_MARK_COMMAND,
+	ID_MARK_THIS,
+	ID_MARK_ALL,
+	ID_MARK_ALL_SIBLING,
+	ID_MARK_CLEAR,
+	ID_MARK_CLEAR_SIBLING,
+	ID_MARK_CLEAR_ALL,
+	ID_MARK_TO_HERE,
+	ID_MARK_END
+};
+
+#define	ID_STYLE_MENU				6030
+
+enum _cmd_style_menu {
+	ID_STYLE_MENU_START = ID_STYLE_MENU,
+	ID_TREE_STYLE,
+	ID_TREE_NONE,
+	ID_TREE_SUNKEN,
+	ID_TREE_GREY,
+	ID_ADBAR_STYLE,
+	ID_ADBAR_NONE,
+	ID_ADBAR_SUNKEN,
+	ID_ADBAR_GREY,
+	ID_TREE_BORDER,
+	ID_ADBAR_BORDER,
+	ID_STYLE_MENU_END
+};
+
+#define ID_CMDLINE_START			6100
+//6100 ~ 6199 Custom command line menu items.
+#define ID_CMDLINE_END				6199
+
+#define	ID_FAVO_START				6200
+//6200 ~ 6299 Favorites' menu.
+#define ID_FAVO_END					6299
+#define ID_ADBAR_GO					6300
+
+#define ID_SHELL_START				10001
+//10001~20000 shell menu
+#define ID_SHELL_END				20000
+
+typedef struct __sCommand {
+	int		id;
+	LPCTSTR	desc;
+} _sCommand;
+
+typedef struct __sKeyData {
+	int id;
+	int key;
+} _sKeyData;
+
+extern const _sCommand CMD_MAP[];
+extern const int g_iCmdCount;
+
+int FindCmd(int id);
+int FindCmd(LPCTSTR desc);
+int GetValidCmdCount();
+int cmdcmp(const void *c1, const void *c2);
