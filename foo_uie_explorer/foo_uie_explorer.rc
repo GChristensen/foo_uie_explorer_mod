@@ -1,0 +1,297 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PREFERENCE DIALOGEX 0, 0, 334, 296
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS
+EXSTYLE WS_EX_RTLREADING | WS_EX_CONTROLPARENT
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_PFR_TAB,"SysTabControl32",TCS_FOCUSNEVER,2,0,328,287
+END
+
+IDD_PPG_DISPLAY DIALOGEX 0, 0, 322, 269
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Startup",IDC_STATIC,5,4,310,60
+    CONTROL         "Do nothing.",IDC_ST_NONE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,16,79,10
+    CONTROL         "Select the latest selected path.",IDC_ST_LAST,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,138,16,159,10
+    CONTROL         "Select the path I specified below.",IDC_ST_USER,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,17,32,132,10
+    EDITTEXT        IDC_STARTPATH,13,46,271,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_SELPATH,287,46,17,14
+    GROUPBOX        "Display Items",IDC_GRP_SHOWITEMS,5,67,310,109
+    CONTROL         "Show all playable files except for...",IDC_FILES_ALL,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,80,132,10
+    CONTROL         "Only show the following types...",IDC_FILES_NONE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,172,80,132,10
+    EDITTEXT        IDC_SHOW_FILES,13,110,291,13,ES_AUTOHSCROLL
+    LTEXT           "Specify the types (extensions) below. Please split them with |.",IDC_STATIC,16,97,278,11,0,WS_EX_TRANSPARENT
+    CONTROL         "Show lines in the tree.",IDC_CHK_SHOWLINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,145,92,10
+    CONTROL         "Show the address bar.",IDC_CHK_ADDBAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,145,90,10
+    CONTROL         "Force items sorted.",IDC_CHK_FORCESORT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,219,145,78,10
+    CONTROL         "Show icons in the tree.",IDC_CHK_SHOWICON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,160,92,10
+    CONTROL         "Show the horizontal scrollbar.",IDC_CHK_HSCROLL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,160,105,10
+    CONTROL         "Show tooltips.",IDC_CHK_TOOLTIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,219,160,82,10
+    CONTROL         "Show hidden files.",IDC_CHK_SHOW_HIDDENFILES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,130,92,10
+    CONTROL         "Show file extensions.",IDC_CHK_SHOW_EXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,130,90,10
+END
+
+IDD_PPG_ACTION DIALOGEX 0, 0, 322, 270
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Shortcuts",IDC_GRP_ACTIONS,5,4,310,264,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER,12,16,296,148
+    COMBOBOX        IDC_SC_SELECT,12,169,296,153,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Mouse",IDC_STATIC,13,183,135,79,0,WS_EX_TRANSPARENT
+    CONTROL         "Left-click",IDC_LCLICK,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,20,194,54,10
+    CONTROL         "Double-cilck",IDC_LDBLCLICK,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,212,54,10
+    CONTROL         "Mid-click",IDC_MCLICK,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,20,230,54,10
+    CONTROL         "Ctrl",IDC_CHK_CTRLKEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,193,44,10
+    CONTROL         "Alt",IDC_CHK_ALTKEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,205,44,10
+    CONTROL         "Shift",IDC_CHK_SHIFTKEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,217,44,10
+    CONTROL         "Winkey",IDC_CHK_WINKEY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,230,44,10
+    PUSHBUTTON      "Add",IDC_MOUSE_ADD,20,243,44,14
+    PUSHBUTTON      "Replace",IDC_MOUSE_REPLACE,77,243,44,14
+    GROUPBOX        "Keyboard",IDC_GRP_HOTKEY,159,206,148,56,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDT_HOTKEY,166,222,133,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_KEY_ADD,166,242,35,14
+    PUSHBUTTON      "Replace",IDC_KEY_REPLACE,207,242,35,14
+    PUSHBUTTON      "Delete",IDC_BTN_DELETE,256,188,50,14
+END
+
+IDD_PPG_COMMAND DIALOGEX 0, 0, 322, 270
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Commands",IDC_GRP_ACTIONS,5,4,310,228,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_CMD_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,16,280,91
+    PUSHBUTTON      "Up",IDC_BTN_UP,295,44,16,14
+    PUSHBUTTON      "Dn",IDC_BTN_DOWN,295,65,16,14
+    LTEXT           "Add some command line shortcuts here, they will be showed on the context menu.\nThere are some variables you might need. See following description.\n:P = full path :D = directory :N = file name :T = file name w/o extension :E = extension",IDC_STATIC,13,113,290,26
+    LTEXT           "Application:",IDC_STATIC,23,145,38,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDT_APP,66,142,222,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_SELAPP,292,142,16,14
+    LTEXT           "Parameters:",IDC_STATIC,13,163,48,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDT_PARAM,66,160,242,14,ES_AUTOHSCROLL
+    LTEXT           "Work path:",IDC_STATIC,13,181,48,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDT_WORKDIR,66,178,242,14,ES_AUTOHSCROLL
+    LTEXT           "Description:",IDC_STATIC,13,199,48,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDT_DESC,66,196,94,14,ES_AUTOHSCROLL
+    LTEXT           "Window size:",IDC_STATIC,165,200,48,8,0,WS_EX_RIGHT
+    COMBOBOX        IDC_SELECT_WS,219,197,89,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_BTN_ADD,171,214,38,14
+    PUSHBUTTON      "Replace",IDC_BTN_REPLACE,222,214,38,14
+    PUSHBUTTON      "Delete",IDC_BTN_DELETE,272,214,38,14
+    GROUPBOX        "Behavior",IDC_STATIC,5,233,143,33
+    CONTROL         "Show these shortcuts in a group.",IDC_CHK_SHOWINGRP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,247,121,10
+END
+
+IDD_PPG_FAVORITE DIALOGEX 0, 0, 322, 270
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Favorites",IDC_GRP_ACTIONS,5,4,310,205,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_FAVO_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,12,16,280,115
+    PUSHBUTTON      "Up",IDC_BTN_UP,295,58,16,14
+    PUSHBUTTON      "Dn",IDC_BTN_DOWN,295,79,16,14
+    LTEXT           "You can specify some folders which you access frequently.",-1,14,134,290,13
+    LTEXT           "Folder:",-1,17,150,41,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDT_FOLDER,63,147,222,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_SELFOLDER,289,147,16,14
+    LTEXT           "Description:",-1,10,171,48,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDT_DESC,63,168,241,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_BTN_ADD,168,188,38,14
+    PUSHBUTTON      "Replace",IDC_BTN_REPLACE,219,188,38,14
+    PUSHBUTTON      "Delete",IDC_BTN_DELETE,269,188,38,14
+    GROUPBOX        "Behavior",-1,5,210,310,47
+    CONTROL         "Show favorites as roots in the tree. (semi-checked: after drives, checked: before drives)",IDC_CHK_SHOWINTREE,
+                    "Button",BS_AUTO3STATE | WS_TABSTOP,13,223,297,10
+    CONTROL         "Show these shortcuts in a group.",IDC_CHK_SHOWINGRP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,241,121,10
+END
+
+IDD_PPG_DISPLAY2 DIALOGEX 0, 0, 322, 269
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Hidden Drives",IDC_STATIC,5,4,174,54
+    LTEXT           "Specify the alphabets of drives you do not need.\nEx: ""ADE"" ---> hide A:, D:, and E: .",IDC_STATIC,12,18,159,20,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_HIDEDRIVE,13,39,155,13,ES_AUTOHSCROLL
+    GROUPBOX        "Window Frames",IDC_STATIC,5,60,68,40
+    PUSHBUTTON      "Set Styles",IDC_BTN_STYLE,13,76,50,14
+    GROUPBOX        "Sizes",IDC_STATIC,183,4,132,96
+    LTEXT           "Node height:\nIn pixels. 0 for original setting.",IDC_STATIC,190,16,104,18
+    EDITTEXT        IDC_NODE_HEIGHT,190,38,50,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Minimal window height:\nThis is intended to use in toolbars.",IDC_STATIC,190,58,118,17
+    EDITTEXT        IDC_MIN_HEIGHT,190,79,50,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_PPG_OTHER DIALOGEX 0, 0, 322, 269
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "Tahoma", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Filter",IDC_STATIC,5,4,310,44
+    LTEXT           "Do not send these file types (extensions) to playlist. (split them by |)",IDC_STATIC,14,16,295,11,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDT_FILTER,13,29,293,13,ES_AUTOHSCROLL
+    GROUPBOX        "Playlists",IDC_STATIC,5,50,310,86
+    CONTROL         "Including subdirectories when create, add, or replace a folder from context menu.",IDC_CHK_RECUR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,62,289,13
+    LTEXT           "Tip: The above setting can be overridden by holding SHIFT key.",IDC_STATIC,27,75,242,8
+    CONTROL         "Send to the default playlist when add or replace a folder/file from context menu.",IDC_CHK_DEFAULT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,86,289,13
+    LTEXT           "Tip: The above setting can be overridden by holding CTRL key.",IDC_STATIC,27,99,242,8
+    LTEXT           "Default playlist name:",IDC_STATIC,17,117,70,8
+    EDITTEXT        IDC_EDT_DEF_PL,90,115,102,14,ES_AUTOHSCROLL
+    GROUPBOX        "Behavior",IDC_STATIC,5,138,310,34,0,WS_EX_TRANSPARENT
+    CONTROL         "Also expand the target when select the startup path or I enter a path to address bar.",IDC_CHK_EXPAND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,151,289,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PREFERENCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 330
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_PPG_DISPLAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 315
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_PPG_ACTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 315
+        TOPMARGIN, 4
+    END
+
+    IDD_PPG_COMMAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 315
+        TOPMARGIN, 4
+    END
+
+    IDD_PPG_FAVORITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 315
+        TOPMARGIN, 4
+    END
+
+    IDD_PPG_DISPLAY2, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 315
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_PPG_OTHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 315
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 262
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

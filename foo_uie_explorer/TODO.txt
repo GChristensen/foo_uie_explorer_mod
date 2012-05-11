@@ -1,0 +1,2 @@
+Hide file extensions.
+Ability to show extra file types.

@@ -1,0 +1,160 @@
+***2.04.8***
+2010/02/23
+changed: Build with the new SDK, this needs foobar2000 1.0.
+fixed: Various bugs which might cause foobar2000 crash. (Thanks for Yirkha)
+
+***1.04.7c***
+2009/5/16
+changed: Color settings are under 'Columns UI' branch, and the other settings are under 'Columns UI extensions' branch.
+changed: Preferences can be reset.
+fixed: Remove some unnecessary synchronous objects (critical sections), this may fix the crashes, too.
+fixed: various bugs.
+
+***1.04.7b***
+2008/11/10
+changed: The panel is limit to single instance.
+fixed: Crash when changing layout of CUI.
+
+***1.04.7a***
+2008/10/25
+changed: The preferences node now under 'Display' branch.
+
+2008/10/8
+fixed: Items are not sorted when the option is checked.
+tweaked: Remove redundant access to disk.
+added: Changes of hide file extension setting take effect on the fly.
+
+***1.04.7***
+2008/10/7
+added: Hide hidden files and file extensions settings.
+changed: Find files in the disk in smooth way.
+
+***1.04.6c***
+2008/09/27
+changed: Compiled with new SDKs. (with VS2008)
+fixed: some minor bugs (hidden drives works in wine now).
+
+***1.04.6b***
+2006/07/06
+changed: Compiled with new SDKs.
+
+***1.04.6a***
+2006/??/??
+changed: Compiled with new SDKs.
+
+***0.04.6***
+2005/10/17
+fixed: If the command line shortcut options has ':' character, it would be parsed with wrong results.
+       -- You can now use '::' to represent single ':'.
+
+2005/10/8
+tweaked: The controls (buttons, checkboxes, etc) in the option window has been reordered.
+
+***0.04.5***
+2005/9/3
+added: Improve the safety. (Threads related)
+fixed: After the user applies new mask string, the nodes in the tree does not update correctly.
+
+2005/9/1
+fixed: An threads related issue which may cause crash.
+
+2005/8/30
+added: Perform memory cleanup on exit, which avoid few memory leaks caused by threads.
+
+***0.04.4***
+2005/8/29
+fixed: A memory leaks issue.
+
+***0.04.3***
+2005/8/28
+added: New commands (actions) 'Reset the panel' and 'Collapse all nodes'.
+
+2005/8/27
+tweaked: Many codes improvements.
+added: The tooltips can be disabled.
+
+2005/8/20
+added: A few config UI improvements.
+
+2005/8/16
+added: Ctrl + Right-Click could show the higher level context menu (may be the sidebar menu, toolbar menu, or tab control menu).
+
+***0.04.2***
+2005/8/15
+tweaked: Improved the performance of the filters.
+fixed: Filters of the file types does not work.
+
+***0.04.1***
+2005/8/8
+added: Multiple selections worked with adding favorites ,removing favorites, and shell menus.
+
+***0.04***
+2005/8/7
+added: Use threads to generate playlists.
+
+2005/8/6
+added: A simple multiple selections model, see the 'Mark' section on the context menu.
+
+2005/8/5
+added: Use threads to perform file operations. (experimental)
+
+***0.03.5***
+2005/8/4
+fixed: Drag and drop a folder on itself will recursive create many folders.
+
+2005/8/3
+added: Support for Universal Naming Convention (UNC) path.
+       -- If you like to see some UNC directories in the tree, please manual add them as favorites.
+       -- Do not use the UNC paths unless it is necessary. Since if the UNC directory could not be accessed,
+          the foobar2000 would be frozen several seconds.
+
+***0.03.4***
+2005/8/3
+added: Drag and drop functions.
+
+2005/8/2
+fixed: A buffer overrun problem, which might cause the foobar2000 crashed when the user open the preferences page.
+
+***0.03.3***
+2005/8/1
+added: System (shell) context menu.
+added: New action 'Goto Now Playing'.
+
+***0.03.2***
+fixed: A small bug about window focus.
+
+***0.03.1***
+Fixed some memory leaks.
+Support Winkey and Alt-key in keyborad shortcuts.
+Add a shortcut on the address bar menu - 'Select Now Playing'.
+Some minor changes.
+
+***0.03***
+Can not set 'default playlist' actions. (fixed)
+Enlarge the buffer of path name to 1024 characters.
+
+***0.03b***
+We can apply a filter when send files to a playlist now.
+Add some operations (see Actions page).
+
+Minimal height. (for toolbar usage)
+Allow multiple instances (not recommend).
+
+Custom colors of address bar.
+Custom height of tree nodes.
+
+Favorites can be displayed as the roots now. Rename and delete operations are available on those entries, and they do not operate on the folder; instead, on the favorites. (note the checkbox for this option is a three-state checkbox.)
+However, any auto select/expand functions can not work with these entries.
+
+Custom favorite folders, you can access them from the context menu or a button on the right side of address bar (you shouldn't hide the address bar).
+
+***0.03a***
+Custom system/shell commands. (for external massrenamer, masstagger, etc.)
+Show content in 'explorer view' "and play" is available.
+
+Options for windows frame.
+An option for hide horizonal scroll bar (need restart the foobar2000).
+Apply uxtheme on preference pages.
+Fix a memory leak issue.
+Custom fonts.
+Bugfixes.
