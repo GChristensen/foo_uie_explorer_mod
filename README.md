@@ -1,7 +1,7 @@
 foo_uie_explorer_mod
 ---
 
-A modified filesystem explorer panel component for the foobar2000.
+A modified filesystem explorer panel component for the [foobar2000](http://www.foobar2000.org) audio player.
 
 The original component could be found 
 [here](http://www.hydrogenaudio.org/forums/index.php?showtopic=34207)
@@ -9,7 +9,7 @@ The original component could be found
 The modified version allows to customize the default folder icon in the filesystem
 tree by replacing it at the foobar's copy of the system icon image list.
 
-This has a couple of disadvantages:
+This has a couple of features/disadvantages:
 
 * The small folder icon will also be replaced in foobar Open/Save dialogs
 * Customized or special folder icons will be left intact
